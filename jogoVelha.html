@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Jogo da Velha </title>
+	<link rel="stylesheet" href="jogoVelha.css" />
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+</head>
+
+<body>
+	<h1>Jogo Da Velha</h1>
+	<fieldset id="jogo">
+		<table>
+			<tr>
+				<td><button value="0-0" data-linha='0' data-coluna='0' name="b1"></button></td>
+				<td><button value="0-1" name="b2"></button></td>
+				<td><button value="0-2" name="b3"></button></td>
+			</tr>
+			<tr>
+				<td><button value="1-0" name="b4"></button></td>
+				<td><button value="1-1" name="b5"></button></td>
+				<td><button value="1-2" name="b6"></button></td>
+			</tr>
+			<tr>
+				<td><button value="2-0" name="b7"></button></td>
+				<td><button value="2-1" name="b8"></button></td>
+				<td><button value="2-2" name="b9"></button></td>
+			</tr>
+
+			<input type="hidden" value="0" name="prox_jogador" />
+			<td>
+				<tr>Jogador: <label id="jogador">X</label> </tr>
+			</td>
+
+		</table>
+		<div>
+			<input type="reset" onclick="clearFields()" value="Novo Jogo" id="novoJ">
+		</div>
+	</fieldset>
+	<script type="text/javascript" src="jogoVelha.js"></script>
+</body>
+
+</html>
